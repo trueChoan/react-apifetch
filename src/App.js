@@ -41,9 +41,9 @@ function App() {
   console.log(employee);
 
   return (
-    <>
+    <div className="App">
     {employee ? (
-      <div className="App">
+      <>
         <UserCard
           firstname={employee.name.first}
           lastname={employee.name.last}
@@ -54,8 +54,8 @@ function App() {
           {' '}
           get someone{' '}
         </button>
-      </div>
+      </>
     ) : <div class="margin" >loading...</div>}
-  </>);
+  </div>);
 }
 export default App;
